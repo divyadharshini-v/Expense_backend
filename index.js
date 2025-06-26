@@ -6,7 +6,7 @@ app.use(express.json())
 const cors=require('cors');
 app.use(cors());
 require('dotenv').config()
-const PORT=process.env.PORT || 5000;
+const PORT=4000;
 const MONGO_URI='mongodb+srv://divyadharshiniv23aid:expensetracker@cluster0.eyqyyyp.mongodb.net/expensetrack?retryWrites=true&w=majority&appName=Cluster0';
 const expenseSchema=new mongoose.Schema({
     title:{
